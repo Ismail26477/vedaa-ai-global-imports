@@ -33,8 +33,24 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:globalimportsworldwide@gmail.com?subject=Enquiry from ${formData.name} - ${formData.company}&body=Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0ACompany: ${formData.company}%0D%0AProduct Category: ${formData.category}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
-    window.location.href = mailtoLink;
+    
+    // Create WhatsApp message with form data
+    const message = `Hello Global Imports!%0A%0AI am interested in your services.%0A%0AName: ${encodeURIComponent(formData.name)}%0AEmail: ${encodeURIComponent(formData.email)}%0ACompany: ${encodeURIComponent(formData.company)}%0AProduct Category: ${encodeURIComponent(formData.category)}%0A%0AMessage: ${encodeURIComponent(formData.message)}`;
+    
+    // WhatsApp link with number 8168619911
+    const whatsappLink = `https://wa.me/918168619911?text=${message}`;
+    
+    // Open WhatsApp
+    window.open(whatsappLink, '_blank');
+    
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      company: '',
+      category: '',
+      message: '',
+    });
   };
 
   return (
