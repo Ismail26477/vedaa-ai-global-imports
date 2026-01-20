@@ -132,7 +132,7 @@ const ContactSection = () => {
                   <Phone className="w-4 h-4 text-cyan-medium" />
                   Contact Our Team
                 </h4>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {teamMembers.map((member, index) => (
                     <motion.a
                       key={index}
@@ -171,10 +171,10 @@ const ContactSection = () => {
           <ScrollReveal direction="right">
             <motion.form 
               onSubmit={handleSubmit} 
-              className="glass-card p-8"
+              className="glass-card p-6 md:p-8"
               whileHover={{ boxShadow: '0 25px 50px -15px rgba(0, 150, 180, 0.15)' }}
             >
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6">
                 {/* Name */}
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
@@ -187,7 +187,7 @@ const ContactSection = () => {
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full pl-10 pr-4 py-3 rounded-xl border border-border bg-white/50 focus:border-cyan-medium focus:ring-2 focus:ring-cyan-light/50 outline-none transition-all"
+                      className="w-full pl-10 pr-4 py-3 rounded-xl border border-border bg-white/50 focus:border-cyan-medium focus:ring-2 focus:ring-cyan-light/50 outline-none transition-all text-sm"
                       placeholder="Your name"
                     />
                   </div>
@@ -205,14 +205,14 @@ const ContactSection = () => {
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full pl-10 pr-4 py-3 rounded-xl border border-border bg-white/50 focus:border-cyan-medium focus:ring-2 focus:ring-cyan-light/50 outline-none transition-all"
+                      className="w-full pl-10 pr-4 py-3 rounded-xl border border-border bg-white/50 focus:border-cyan-medium focus:ring-2 focus:ring-cyan-light/50 outline-none transition-all text-sm"
                       placeholder="your@email.com"
                     />
                   </div>
                 </div>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6">
                 {/* Company */}
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
@@ -224,7 +224,7 @@ const ContactSection = () => {
                       type="text"
                       value={formData.company}
                       onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                      className="w-full pl-10 pr-4 py-3 rounded-xl border border-border bg-white/50 focus:border-cyan-medium focus:ring-2 focus:ring-cyan-light/50 outline-none transition-all"
+                      className="w-full pl-10 pr-4 py-3 rounded-xl border border-border bg-white/50 focus:border-cyan-medium focus:ring-2 focus:ring-cyan-light/50 outline-none transition-all text-sm"
                       placeholder="Your company"
                     />
                   </div>
@@ -238,7 +238,7 @@ const ContactSection = () => {
                   <select
                     value={formData.category}
                     onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl border border-border bg-white/50 focus:border-cyan-medium focus:ring-2 focus:ring-cyan-light/50 outline-none transition-all text-foreground"
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-white/50 focus:border-cyan-medium focus:ring-2 focus:ring-cyan-light/50 outline-none transition-all text-foreground text-sm"
                   >
                     <option value="">Select category</option>
                     {categories.map((cat) => (
