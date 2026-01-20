@@ -171,7 +171,7 @@ const ContactSection = () => {
           <ScrollReveal direction="right">
             <motion.form 
               onSubmit={handleSubmit} 
-              className="glass-card p-3md:p-6"
+              className="glass-card p-6 md:p-8"
               whileHover={{ boxShadow: '0 25px 50px -15px rgba(0, 150, 180, 0.15)' }}
             >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6">
