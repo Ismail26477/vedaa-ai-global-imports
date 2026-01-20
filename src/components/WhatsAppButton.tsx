@@ -1,10 +1,12 @@
+'use client';
+
 import { motion } from 'framer-motion';
 import { MessageCircle } from 'lucide-react';
 
 const WhatsAppButton = () => {
   return (
     <motion.a
-      href="https://wa.me/919011675422?text=Hello%20Global%20Imports!%20I%20am%20interested%20in%20your%20services."
+      href="https://wa.me/918168619911?text=Hello%20Global%20Imports!%20I%20am%20interested%20in%20your%20services."
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 group"
