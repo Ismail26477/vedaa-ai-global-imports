@@ -67,7 +67,7 @@ const TrustBadges = () => {
       </div>
 
       <div className="container-custom relative z-10">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {badges.map((badge, index) => (
             <ScrollReveal key={index} direction="up" delay={index * 100}>
               <motion.div
