@@ -95,20 +95,20 @@ const WhyChooseUs = () => {
                     borderColor: 'rgba(0, 200, 220, 0.3)',
                   }}
                 >
-                  <motion.div 
-                    className={`w-14 h-14 rounded-2xl ${feature.iconBg} flex items-center justify-center mb-4`}
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ type: "spring", stiffness: 400 }}
+                <motion.div 
+                  className={`w-12 h-12 md:w-14 md:h-14 rounded-2xl ${feature.iconBg} flex items-center justify-center mb-3 md:mb-4`}
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 400 }}
+                >
+                  <motion.div
+                    className={`w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center shadow-lg`}
+                    whileHover={{ rotate: 5 }}
                   >
-                    <motion.div
-                      className={`w-12 h-12 rounded-xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center shadow-lg`}
-                      whileHover={{ rotate: 5 }}
-                    >
-                      <feature.icon className="w-6 h-6 text-white" />
-                    </motion.div>
+                    <feature.icon className="w-5 h-5 md:w-6 md:h-6 text-white" />
                   </motion.div>
-                  <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-cyan-dark transition-colors">{feature.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
+                </motion.div>
+                <h3 className="text-base md:text-lg font-bold text-foreground mb-2 group-hover:text-cyan-dark transition-colors">{feature.title}</h3>
+                <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">{feature.description}</p>
                 </motion.div>
               </motion.div>
             </ScrollReveal>
