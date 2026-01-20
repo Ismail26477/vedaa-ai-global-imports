@@ -66,25 +66,25 @@ const ContactSection = () => {
           {/* Contact Info */}
           <ScrollReveal direction="left">
             <motion.div 
-              className="glass-card p-8 h-full"
+              className="glass-card p-6 md:p-8 h-full"
               whileHover={{ boxShadow: '0 25px 50px -15px rgba(0, 150, 180, 0.15)' }}
             >
-              <h3 className="text-xl font-bold text-foreground mb-6">Contact Information</h3>
+              <h3 className="text-lg md:text-xl font-bold text-foreground mb-6">Contact Information</h3>
 
               {/* Email */}
               <motion.div 
-                className="flex items-start gap-4 mb-6 group cursor-pointer"
+                className="flex items-start gap-3 md:gap-4 mb-6 group cursor-pointer"
                 whileHover={{ x: 5 }}
               >
                 <motion.div 
-                  className="w-12 h-12 rounded-xl bg-cyan-light/50 flex items-center justify-center flex-shrink-0"
+                  className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-cyan-light/50 flex items-center justify-center flex-shrink-0"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                 >
-                  <Mail className="w-6 h-6 text-cyan-dark" />
+                  <Mail className="w-5 h-5 md:w-6 md:h-6 text-cyan-dark" />
                 </motion.div>
-                <div>
-                  <p className="font-medium text-foreground">Email</p>
-                  <a href="mailto:globalimportsworldwide@gmail.com" className="text-muted-foreground group-hover:text-cyan-dark transition-colors">
+                <div className="min-w-0">
+                  <p className="font-medium text-foreground text-sm md:text-base">Email</p>
+                  <a href="mailto:globalimportsworldwide@gmail.com" className="text-muted-foreground group-hover:text-cyan-dark transition-colors text-xs md:text-sm break-words">
                     globalimportsworldwide@gmail.com
                   </a>
                 </div>
@@ -92,18 +92,18 @@ const ContactSection = () => {
 
               {/* Office Phone */}
               <motion.div 
-                className="flex items-start gap-4 mb-6 group cursor-pointer"
+                className="flex items-start gap-3 md:gap-4 mb-6 group cursor-pointer"
                 whileHover={{ x: 5 }}
               >
                 <motion.div 
-                  className="w-12 h-12 rounded-xl bg-cyan-light/50 flex items-center justify-center flex-shrink-0"
+                  className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-cyan-light/50 flex items-center justify-center flex-shrink-0"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                 >
-                  <Phone className="w-6 h-6 text-cyan-dark" />
+                  <Phone className="w-5 h-5 md:w-6 md:h-6 text-cyan-dark" />
                 </motion.div>
                 <div>
-                  <p className="font-medium text-foreground">Office Phone</p>
-                  <a href="tel:+919270109911" className="text-muted-foreground group-hover:text-cyan-dark transition-colors">
+                  <p className="font-medium text-foreground text-sm md:text-base">Office Phone</p>
+                  <a href="tel:+919270109911" className="text-muted-foreground group-hover:text-cyan-dark transition-colors text-xs md:text-sm">
                     +91 9270109911
                   </a>
                 </div>
@@ -111,18 +111,18 @@ const ContactSection = () => {
 
               {/* Location */}
               <motion.div 
-                className="flex items-start gap-4 mb-6 group cursor-pointer"
+                className="flex items-start gap-3 md:gap-4 mb-6 group cursor-pointer"
                 whileHover={{ x: 5 }}
               >
                 <motion.div 
-                  className="w-12 h-12 rounded-xl bg-purple-light/50 flex items-center justify-center flex-shrink-0"
+                  className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-purple-light/50 flex items-center justify-center flex-shrink-0"
                   whileHover={{ scale: 1.1, rotate: -5 }}
                 >
-                  <MapPin className="w-6 h-6 text-purple-medium" />
+                  <MapPin className="w-5 h-5 md:w-6 md:h-6 text-purple-medium" />
                 </motion.div>
                 <div>
-                  <p className="font-medium text-foreground">Location</p>
-                  <p className="text-muted-foreground">Nagpur, Maharashtra, India</p>
+                  <p className="font-medium text-foreground text-sm md:text-base">Location</p>
+                  <p className="text-muted-foreground text-xs md:text-sm">Nagpur, Maharashtra, India</p>
                 </div>
               </motion.div>
 
