@@ -1,3 +1,5 @@
+'use client';
+
 import { motion } from 'framer-motion';
 import { MessageCircle, Calendar, ArrowRight } from 'lucide-react';
 import { ScrollReveal } from '@/hooks/useScrollReveal';
@@ -9,7 +11,7 @@ const CTASection = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src={heroPortImage} 
+          src={heroPortImage || "/placeholder.svg"} 
           alt="Global shipping" 
           className="w-full h-full object-cover"
         />
@@ -47,7 +49,7 @@ const CTASection = () => {
         <ScrollReveal direction="up" delay={200}>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.a
-              href="https://wa.me/919011675422?text=Hello%20Global%20Imports!%20I%20am%20interested%20in%20your%20services."
+              href="https://wa.me/918168619911?text=Hello%20Global%20Imports!%20I%20am%20interested%20in%20your%20services."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-cyan-dark font-semibold rounded-xl shadow-medium"
