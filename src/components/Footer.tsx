@@ -53,7 +53,7 @@ const Footer = () => {
               <img 
                 src={globalLogo || "/placeholder.svg"} 
                 alt="Global Imports" 
-                className="w-8 h-8"
+                className="w-28 h-16"
               />
               <span className="text-xl font-bold text-white">Global Imports</span>
             </a>
